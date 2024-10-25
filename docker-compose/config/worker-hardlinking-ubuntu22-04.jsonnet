@@ -18,7 +18,7 @@ local common = import 'common.libsonnet';
       cacheReplacementPolicy: 'LEAST_RECENTLY_USED',
     },
     runners: [{
-      endpoint: { address: 'unix:///worker/runner' },
+      endpoint: { address: 'runner-hardlinking-ubuntu22-04:8980' },
       concurrency: 8,
       instanceNamePrefix: 'hardlinking',
       platform: {

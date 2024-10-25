@@ -57,8 +57,8 @@ jsonnet_library(
 http_archive(
     name = "abseil-hello",
     patch_cmds = [
-        "sed -i 's/com_google_absl/abseil-cpp/' BUILD.bazel",
-        "sed -i 's/com_google_googletest/googletest/' BUILD.bazel",
+        "sed -i '' 's/com_google_absl/abseil-cpp/' BUILD.bazel",
+        "sed -i '' 's/com_google_googletest/googletest/' BUILD.bazel",
     ],
     sha256 = "e676640e69e210636de795f571237bec09a9ad9af6e441bf56f0d193cfe1c9fc",
     strip_prefix = "abseil-hello-b4803b41ab3d58c503265148e5a7d3fd2a8e46d3/bazel-hello",
