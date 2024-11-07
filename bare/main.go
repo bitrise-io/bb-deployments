@@ -101,8 +101,6 @@ func main() {
 	log.Println("\t- they should stop once bb_scheduler is ready")
 
 	bbs := []buildbarnProcess{
-		{config: "bare/config/storage.jsonnet", binary: "bb_storage"},
-		{config: "bare/config/frontend.jsonnet", binary: "bb_storage"},
 		{config: "bare/config/scheduler.jsonnet", binary: "bb_scheduler"},
 		{config: "bare/config/worker.jsonnet", binary: "bb_worker"},
 		{config: "bare/config/runner.jsonnet", binary: "bb_runner"},

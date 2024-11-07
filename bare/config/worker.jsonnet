@@ -29,6 +29,7 @@ local common = import 'common.libsonnet';
   }],
   inputDownloadConcurrency: 10,
   outputUploadConcurrency: 11,
+  force_upload_trees_and_directories: true,
   directoryCache: {
     maximumCount: 1000,
     maximumSizeBytes: 1000 * 1024,
